@@ -3,10 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_dark">
+
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:spinnerMode="dropdown"
+        android:theme="@style/CustomSpinnerStyle" />
     <FrameLayout
         android:id="@+id/container_fragm"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/citySpinner"
         android:layout_above="@id/buttonContainer" />
     <LinearLayout
         android:id="@+id/buttonContainer"
